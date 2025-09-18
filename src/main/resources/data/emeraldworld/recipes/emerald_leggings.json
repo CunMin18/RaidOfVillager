@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "raid_of_villager:emerald_leggings",
+    "count": 1
+  }
+}

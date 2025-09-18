@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "raidofvillager",
+  "version": "${version}",
+  "name": "RaidOfVillager",
+  "description": "",
+  "authors": ["CunMin18"],
+  "contact": {},
+  "license": "CC BY-NC 4.0",
+  "icon": "assets/raid_of_villager/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.cunmin18.raidofvillager.client.RaidofvillagerDataGenerator"
+    ],
+    "client": [
+      "org.cunmin18.raidofvillager.client.RaidofvillagerClient"
+    ],
+    "main": [
+      "org.cunmin18.raidofvillager.Raidofvillager"
+    ]
+  },
+  "mixins": [
+    "raidofvillager.mixins.json",
+    {
+      "config": "raidofvillager.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
